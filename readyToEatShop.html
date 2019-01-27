@@ -50,53 +50,6 @@
         <li class="nav-item">
           <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Contact</a>
         </li>
-<!-- Contact Modal -->
-        <div class="modal" id="myModal">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                          <h4 class="modal-title">Send us and we'll be more than happy to assist!</h4>
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-                        <!-- Modal body including the form group (Name+ e-mail + Message)-->
-                        <div class="modal-body">
-                          <form action="/action_page.php">
-                            <!-- Name -->
-                            <div class="form-group">
-                              <label for="usr">Name:</label>
-                              <input type="text" class="form-control" id="usr"  placeholder="Enter Your Name">
-                            </div>
-
-                            <!-- e-mail -->
-                            <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter Your email" name="email">
-                            </div>
-
-                            <!-- Message text area -->
-                            <div class="form-group">
-                              <label for="comment">Comment:</label>
-                              <textarea class="form-control" rows="5" id="comment"></textarea>
-                            </div>
-
-                            <!-- Callback Check Box -->
-                            <div class="form-check">
-                              <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" name="remember"> Call me if possible
-                              </label>
-                            </div>
-                        </form>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                          <button type="submit" class="btn btn-primary" data-dismiss="modal">Send</button>
-                        </div>
-                      </div>
-                    </div>
-        </div>
 <!-- Shop  -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" >Shop</a>
@@ -118,12 +71,58 @@
 
 <!-- Cart on the right-side of the Nav -->
       <div class="float-right">
-        <img src="img/cart.png" alt="Cart" style="max-height:25px;width:auto;">
+        <img src="img/icons/cart.png" alt="Cart" style="max-height:25px;width:auto;">
         <span class="badge badge-primary badge-pill">99</span>
       </div>
-    </nav>  <!-- NavBar @END -->
+    </nav>
+<!-- Hidden Contact Modal -->
+            <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
 
-<!-- The Page content below the NavBar -->
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Send us and we'll be more than happy to assist!</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <!-- Modal body including the form group (Name+ e-mail + Message)-->
+                            <div class="modal-body">
+                              <form action="/action_page.php">
+                                <!-- Name -->
+                                <div class="form-group">
+                                  <label for="usr">Name:</label>
+                                  <input type="text" class="form-control" id="usr"  placeholder="Enter Your Name">
+                                </div>
+
+                                <!-- e-mail -->
+                                <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter Your email" name="email">
+                                </div>
+
+                                <!-- Message text area -->
+                                <div class="form-group">
+                                  <label for="comment">Comment:</label>
+                                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>
+
+                                <!-- Callback Check Box -->
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember"> Call me if possible
+                                  </label>
+                                </div>
+                            </form>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                              <button type="submit" class="btn btn-primary" data-dismiss="modal">Send</button>
+                            </div>
+                          </div>
+                        </div>
+            </div>
+<!-- The Page content below the navigation bar -->
 
 <!-- Container 1 -->
 <div class="container" style="padding-bottom:60px; padding-top:60px;">
@@ -138,7 +137,7 @@
 <!--Column 1-->
     <div class="col-sm-3">
       <h3>Column 1</h3>
-      <a href="#"><img src="img/cake2.jpg" class="rounded" alt="Cinque Terre"></a>
+      <a href="productSelect.html"><img src="img/cake2.jpg" class="rounded" alt="Cinque Terre"></a>
       <div class="row" style="margin-top:10px;">
         <div class="col-sm-10">
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
@@ -153,7 +152,7 @@
 <!--Column 2-->
     <div class="col-sm-3">
       <h3>Column 2</h3>
-      <a href="#"><img src="img/cake3.jpg" class="rounded" alt="Cinque Terre"></a>
+      <a href="productSelect.html"><img src="img/cake3.jpg" class="rounded" alt="Cinque Terre"></a>
       <div class="row" style="margin-top:10px;">
         <div class="col-sm-10">
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
@@ -168,7 +167,7 @@
 <!--Column 3-->
     <div class="col-sm-3">
       <h3>Column 3</h3>
-      <a href="#"><img src="img/cake4.jpg" class="rounded" alt="Cinque Terre"></a>
+      <a href="productSelect.html"><img src="img/cake4.jpg" class="rounded" alt="Cinque Terre"></a>
       <div class="row" style="margin-top:10px;">
         <div class="col-sm-10">
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
@@ -183,7 +182,7 @@
 <!--Column 4-->
     <div class="col-sm-3">
       <h3>Column 4</h3>
-      <a href="#"><img src="img/cake5.jpg" class="rounded" alt="Cinque Terre"></a>
+      <a href="productSelect.html"><img src="img/cake5.jpg" class="rounded" alt="Cinque Terre"></a>
       <div class="row" style="margin-top:10px;">
         <div class="col-sm-10">
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
@@ -202,7 +201,7 @@
 <!--Column 1-->
     <div class="col-sm-3">
       <h3>Column 1</h3>
-      <a href="#"><img src="img/cake2.jpg" class="rounded" alt="Cinque Terre"></a>
+      <a href="productSelect.html"><img src="img/cake2.jpg" class="rounded" alt="Cinque Terre"></a>
       <div class="row" style="margin-top:10px;">
         <div class="col-sm-10">
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
@@ -217,7 +216,7 @@
 <!--Column 2-->
     <div class="col-sm-3">
       <h3>Column 2</h3>
-      <a href="#"><img src="img/cake3.jpg" class="rounded" alt="Cinque Terre"></a>
+      <a href="productSelect.html"><img src="img/cake3.jpg" class="rounded" alt="Cinque Terre"></a>
       <div class="row" style="margin-top:10px;">
         <div class="col-sm-10">
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
@@ -232,7 +231,7 @@
 <!--Column 3-->
     <div class="col-sm-3">
       <h3>Column 3</h3>
-      <a href="#"><img src="img/cake4.jpg" class="rounded" alt="Cinque Terre"></a>
+      <a href="productSelect.html"><img src="img/cake4.jpg" class="rounded" alt="Cinque Terre"></a>
       <div class="row" style="margin-top:10px;">
         <div class="col-sm-10">
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
@@ -247,7 +246,7 @@
 <!--Column 4-->
     <div class="col-sm-3">
       <h3>Column 4</h3>
-      <a href="#"><img src="img/cake5.jpg" class="rounded" alt="Cinque Terre"></a>
+      <a href="productSelect.html"><img src="img/cake5.jpg" class="rounded" alt="Cinque Terre"></a>
       <div class="row" style="margin-top:10px;">
         <div class="col-sm-10">
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
@@ -332,70 +331,70 @@
   </div> <!-- Container 2 @END -->
 
 
-<!--About Section (below the hilighted products section) (Above the footer) -->
-<div class="container-fluid bg-dark text-light" id="abtInfo" >
-  <div class="container d-block mx-auto" style="padding-bottom: 10px; padding-top: 10px;">
-      <h2>About Us</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <pre class="text-light">
-23-456-7890 | INFO@MYSITE.COM | ORDER ONLINE HERE
-Pick up is available from 500 Terry A Francois Blvd
-San Francisco, CA 94158, USA</pre>
-      <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+  <!--About Section (below the hilighted products section) (Above the footer) -->
+  <div class="container-fluid bg-dark text-light" id="abtInfo" >
+    <div class="container d-block mx-auto" style="padding-bottom: 10px; padding-top: 10px;">
+        <h2>About Us</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <pre class="text-light">
+  23-456-7890 | INFO@MYSITE.COM | ORDER ONLINE HERE
+  Pick up is available from 500 Terry A Francois Blvd
+  San Francisco, CA 94158, USA</pre>
+        <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+    </div>
   </div>
-</div>
 
-<!-- Footer full width background-->
-    <div class="container-fluid" style="margin:20px 0px;">
-<!-- Footer container width content-->
-      <div class="container">
-          <div class="row">
-            <div class="col-sm-3">
-              <dl>
-                <dt>CupCackes</dt>
-                <dd>Half dozen of mixed CupCackes</dd>
-                <dt>CupCackes</dt>
-                <dd>Half dozen of mixed CupCackes</dd>
-                <dt>CupCackes</dt>
-                <dd>Half dozen of mixed CupCackes</dd>
-              </dl>
-            </div>
-            <div class="col-sm-2">
-              <dl>
-                <dt>Legal</dt>
-                <dd>Terms and Conditions</dd>
-                <dd>Cookies</dd>
-                <dd>Privacy</dd>
-                <dt>Help</dt>
-                <dd>Site Map</dd>
-                <dd>FAQ</dd>
-                <dd>Contact Us</dd>
-              </dl>
-            </div>
-            <div class="col-sm-2">
-              <dl>
-                <dt>Social Media Platforms</dt>
-                <dd>FaceBook</dd>
-                <dd>Twitter</dd>
-                <dd>Instagram</dd>
-              </dl>
-            </div>
-            <div class="col-sm-2 text-left">
-                <h5>10% Off on your 1<small>st</small> order Through Pastry's Mobile App</h5>
-                <p class="font-italic text-secondary text-center">FB or Google login will be Required</p>
-            </div>
-            <div class="col-sm-3">
-                <a href="#"><img class="rounded" src="img/appStore.jpg"/ style="max-height:150px;"></a>
+  <!-- Footer full width background-->
+      <div class="container-fluid" style="margin:20px 0px;">
+  <!-- Footer container width content-->
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <dl>
+                  <dt>CupCackes</dt>
+                  <dd>Half dozen of mixed CupCackes</dd>
+                  <dt>CupCackes</dt>
+                  <dd>Half dozen of mixed CupCackes</dd>
+                  <dt>CupCackes</dt>
+                  <dd>Half dozen of mixed CupCackes</dd>
+                </dl>
+              </div>
+              <div class="col-sm-2">
+                <dl>
+                  <dt>Legal</dt>
+                  <dd>Terms and Conditions</dd>
+                  <dd>Cookies</dd>
+                  <dd>Privacy</dd>
+                  <dt>Help</dt>
+                  <dd>Site Map</dd>
+                  <dd>FAQ</dd>
+                  <dd>Contact Us</dd>
+                </dl>
+              </div>
+              <div class="col-sm-2">
+                <dl>
+                  <dt>Social Media Platforms</dt>
+                  <dd>FaceBook</dd>
+                  <dd>Twitter</dd>
+                  <dd>Instagram</dd>
+                </dl>
+              </div>
+              <div class="col-sm-2 text-left">
+                  <h5>10% Off on your 1<small>st</small> order Through Pastry's Mobile App</h5>
+                  <p class="font-italic text-secondary text-center">FB or Google login will be Required</p>
+              </div>
+              <div class="col-sm-3">
+                  <a href="#"><img class="rounded" alt="App Store" src="img/appStore.jpg" style="max-height:150px;"></a>
+              </div>
             </div>
           </div>
         </div>
+  <!-- CopyRight -->
+      <div class="container-fluid bg-dark d-block" style="margin-bottom: 0px; font-size: 12px;">
+        <p class="text-center text-light" style="margin-bottom:0px;">
+          Designed and build with Love --Copyright 2019 by Mina A.Abdelmalek. All Rights Reserved While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy
+        </p>
       </div>
-<!-- CopyRight -->
-    <div class="container-fluid bg-dark d-block" style="margin-bottom: 0px; font-size: 12px;">
-      <p class="text-center text-light" style="margin-bottom:0px;">
-        Designed and build with Love <\3  --Copyright 2019 by Mina A.Abdelmalek. All Rights Reserved While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy
-      </p>
-    </div>
 
-  </body>
-</html>
+    </body>
+  </html>
