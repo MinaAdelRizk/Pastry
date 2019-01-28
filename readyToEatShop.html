@@ -60,68 +60,69 @@
           </div>
         </li>
       </ul>
+<!-- Contact Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Send us and we'll be more than happy to assist!</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body including the form group (Name+ e-mail + Message)-->
+            <div class="modal-body">
+              <form action="/action_page.php">
+                <!-- Name -->
+                <div class="form-group">
+                  <label for="usr">Name:</label>
+                  <input type="text" class="form-control" id="usr"  placeholder="Enter Your Name">
+                </div>
+
+                <!-- e-mail -->
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter Your email" name="email">
+                </div>
+
+                <!-- Message text area -->
+                <div class="form-group">
+                  <label for="comment">Comment:</label>
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+
+                <!-- Callback Check Box -->
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Call me if possible
+                  </label>
+                </div>
+              </form>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary" data-dismiss="modal">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 <!-- Search Bar on the navigation bar-->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="margin-left: 15%;">
-  <form class="form-inline" action="/action_page.php">
-    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-    <button class="btn btn-success" type="submit">Search</button>
-  </form>
-</nav>
+      <div style="margin-left: 15%;margin-right: 1%;">
+        <form class="form-inline" action="/action_page.php">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
 
 <!-- Cart on the right-side of the Nav -->
-      <div class="float-right">
+      <div class="cart">
         <img src="img/icons/cart.png" alt="Cart" style="max-height:25px;width:auto;">
         <span class="badge badge-primary badge-pill">99</span>
       </div>
     </nav>
-<!-- Hidden Contact Modal -->
-            <div class="modal" id="myModal">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
 
-                            <!-- Modal Header -->
-                            <div class="modal-header">
-                              <h4 class="modal-title">Send us and we'll be more than happy to assist!</h4>
-                              <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-                            <!-- Modal body including the form group (Name+ e-mail + Message)-->
-                            <div class="modal-body">
-                              <form action="/action_page.php">
-                                <!-- Name -->
-                                <div class="form-group">
-                                  <label for="usr">Name:</label>
-                                  <input type="text" class="form-control" id="usr"  placeholder="Enter Your Name">
-                                </div>
-
-                                <!-- e-mail -->
-                                <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter Your email" name="email">
-                                </div>
-
-                                <!-- Message text area -->
-                                <div class="form-group">
-                                  <label for="comment">Comment:</label>
-                                  <textarea class="form-control" rows="5" id="comment"></textarea>
-                                </div>
-
-                                <!-- Callback Check Box -->
-                                <div class="form-check">
-                                  <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" name="remember"> Call me if possible
-                                  </label>
-                                </div>
-                            </form>
-                            </div>
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                              <button type="submit" class="btn btn-primary" data-dismiss="modal">Send</button>
-                            </div>
-                          </div>
-                        </div>
-            </div>
 <!-- The Page content below the navigation bar -->
 
 <!-- Container 1 -->
