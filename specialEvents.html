@@ -6,6 +6,10 @@
     <meta charset="utf-8">
     <!-- To ensure proper rendering and touch zooming & Responsivenes on various view ports -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Linked CSS File-->
+    <link rel="stylesheet" href="css/app.css">
+
     <!-- CDN (Content Delivery Network)-->
 
     <!-- Latest compiled and minified CSS -->
@@ -30,14 +34,14 @@
     <!-- Page Header / Title -->
     <!--Horizontal Navigation bar on the top of the page below the header -->
     <!-- A grey horizontal navbar that becomes vertical on small screens -->
-    <nav class= "navbar navbar-expand-sm justify-content-center bg-dark navbar-dark">
+    <nav class= "navbar navbar-expand-sm justify-content-center bg-darker navbar-dark">
       <!--  logomakr.com/2TNy6K -->
       <a class="navbar-brand" href="index.html" style="padding:0px;"><img src="img/icons/pLogo.png" alt="Logo" style=";height:auto;"> </a>
       <ul class="navbar-nav">
     <!-- HOME  -->
         <li class="nav-item">
           <a class="nav-link active" href="index.html">Home</a>
-        </li>
+        </li>r
     <!-- About  -->
         <li class="nav-item">
           <a class="nav-link" href="#abtInfo">About</a>
@@ -49,7 +53,7 @@
     <!-- Shop  -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" >Shop</a>
-          <div class="dropdown-menu bg-dark navbar-dark">
+          <div class="dropdown-menu gh-darker navbar-dark">
             <a class="dropdown-item text-light" href="readyToEatShop.html">Ready To Eat</a>
             <a class="dropdown-item text-light" href="#">Ingrudients & Receipts</a>
             <a class="dropdown-item text-light" href="#">Special Events</a>
@@ -123,9 +127,7 @@
     <div class="container-fluid parallax-window text-light" data-parallax="scroll" data-image-src="img/eventsBg.jpg">
       <div class="row" style="height:550px">
           <div class="col-sm-6 text-light" style="margin-top:2.75rem;margin-left:2.75rem;">
-            <h4>Let's Celebrate</h4>
-            <p>Looking for a memorable birthday party to your kid? We are UAE’s favourite birthday party organizer. We arrange for birthday party at your home or garden or event halls.  Starting from themed party decoration, furniture’s, indoor & outdoor games, bouncy castles, face painting and magician we have everything for a fun filled birthday party as a package that your child and their friends will love. Pickup& delivery available. Book online or call us at +971565829500.
-            </p>
+            <!-- Left Sided content 50% width -->
           </div>
         </div>
 
@@ -146,18 +148,27 @@
         </div>
       </div>
 
-  <!--About Section (below the hilighted products section) (Above the footer) -->
-  <div class="container-fluid bg-dark text-light" id="abtInfo" >
-    <div class="container d-block mx-auto" style="padding-bottom: 10px; padding-top: 10px;">
-        <h2 style="vertical-align: middle;">About Us</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <pre class="text-light">
-  23-456-7890 | INFO@MYSITE.COM | ORDER ONLINE HERE
-  Pick up is available from 500 Terry A Francois Blvd
-  San Francisco, CA 94158, USA</pre>
-        <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-    </div>
-  </div>
+      <!--About Section (below the hilighted products section) (Above the footer) -->
+      <div class="container-fluid bg-darker abtTxt" id="abtInfo" >
+        <div class="container d-block mx-auto" style="padding-bottom: 10px; padding-top: 10px;">
+          <div class="row">
+            <div class="col-sm-8">
+
+
+            <h2>Let's Celebrate</h2>
+            <h5 style="color:#f5a637;">Let us Manage your Party</h5>
+            <p>Looking for a memorable birthday party to your kid? We are UAE’s favourite birthday party organizer. We arrange for birthday party at your home or garden or event halls.  Starting from themed party decoration, furniture’s, indoor & outdoor games, bouncy castles, face painting and magician we have everything for a fun filled birthday party as a package that your child and their friends will love. Pickup& delivery available. Book online or call us at +971565829500.
+            </p>
+            </div> <!--About left sided information column @END -->
+            <div class="col-sm-4 mx-auto" style="padding-top: 25px;">
+              <img src="img/icons/pLogo.png" alt="Pastry" class="mx-auto d-block">
+              <h6 style="color:#f5a637;text-align:center;">Cakes And Bakes</h6>
+            </div>
+          </div> <!--About left sided information row @END -->
+            <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+        </div>
+      </div>
+
   <div class="container-fluid parallax-window text-light" data-parallax="scroll" data-image-src="img/rawChocolate.jpg">
     <div class="row" style="height:550px">
         <div class="col-sm-6 text-light" style="margin-top:2.75rem;margin-left:2.75rem;">
@@ -229,7 +240,7 @@
           </div>
         </div>
   <!-- CopyRight -->
-      <div class="container-fluid bg-dark d-block" style="margin-bottom: 0px; font-size: 12px;">
+      <div class="container-fluid gh-darker d-block" style="margin-bottom: 0px; font-size: 12px;">
         <p class="text-center text-light" style="margin-bottom:0px;">
           Designed and build with Love --Copyright 2019 by Mina A.Abdelmalek. All Rights Reserved While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy
         </p>

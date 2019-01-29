@@ -6,6 +6,10 @@
     <meta charset="utf-8">
     <!-- To ensure proper rendering and touch zooming & Responsivenes on various view ports -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Linked CSS File-->
+    <link rel="stylesheet" href="css/app.css">
+
     <!-- CDN (Content Delivery Network)-->
 
     <!-- Latest compiled and minified CSS -->
@@ -26,7 +30,7 @@
   <!-- Index / body -->
   <body>
     <!-- Page Header / Title -->
-    <nav class= "navbar navbar-expand-sm justify-content-center bg-dark navbar-dark">
+    <nav class= "navbar navbar-expand-sm justify-content-center bg-darker navbar-dark">
       <!--  logomakr.com/2TNy6K -->
       <a class="navbar-brand" href="index.html" style="padding:0px;"><img src="img/icons/pLogo.png" alt="Logo" style=";height:auto;"> </a>
       <ul class="navbar-nav">
@@ -45,7 +49,7 @@
     <!-- Shop  -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" >Shop</a>
-          <div class="dropdown-menu bg-dark navbar-dark">
+          <div class="dropdown-menu gh-darker navbar-dark">
             <a class="dropdown-item text-light" href="readyToEatShop.html">Ready To Eat</a>
             <a class="dropdown-item text-light" href="#">Ingrudients & Receipts</a>
             <a class="dropdown-item text-light" href="specialEvents.html">Special Events</a>
@@ -299,14 +303,24 @@
 </div>
 
 <!--About Section (below the hilighted products section) (Above the footer) -->
-<div class="container-fluid bg-dark text-light" id="abtInfo" >
+<div class="container-fluid bg-darker abtTxt" id="abtInfo" >
   <div class="container d-block mx-auto" style="padding-bottom: 10px; padding-top: 10px;">
+    <div class="row">
+      <div class="col-sm-8">
+
+
       <h2>About Us</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <pre class="text-light">
+      <h5 style="color:#f5a637;">Title description, Sep 2, 2017</h5>
+      <pre class="abtTxt">
 23-456-7890 | INFO@MYSITE.COM | ORDER ONLINE HERE
 Pick up is available from 500 Terry A Francois Blvd
 San Francisco, CA 94158, USA</pre>
+      </div> <!--About left sided information column @END -->
+      <div class="col-sm-4 mx-auto" style="padding-top: 25px;">
+        <img src="img/icons/pLogo.png" alt="Pastry" class="mx-auto d-block">
+        <h6 style="color:#f5a637;text-align:center;">Cakes And Bakes</h6>
+      </div>
+    </div> <!--About left sided information row @END -->
       <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
   </div>
 </div>
@@ -357,7 +371,7 @@ San Francisco, CA 94158, USA</pre>
         </div>
       </div>
 <!-- CopyRight -->
-    <div class="container-fluid bg-dark d-block" style="margin-bottom: 0px; font-size: 12px;">
+    <div class="container-fluid bg-darker d-block" style="margin-bottom: 0px; font-size: 12px;">
       <p class="text-center text-light" style="margin-bottom:0px;">
         Designed and build with Love --Copyright 2019 by Mina A.Abdelmalek. All Rights Reserved While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy
       </p>
