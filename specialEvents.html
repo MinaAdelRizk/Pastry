@@ -10,6 +10,9 @@
     <!-- Linked CSS File-->
     <link rel="stylesheet" href="css/app.css">
 
+    <!-- Linked Js File-->
+    <script src="js/app.js"></script>
+
     <!-- CDN (Content Delivery Network)-->
 
     <!-- Latest compiled and minified CSS -->
@@ -53,7 +56,7 @@
     <!-- Shop  -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" >Shop</a>
-          <div class="dropdown-menu gh-darker navbar-dark">
+          <div class="dropdown-menu" id="navBarDdown">
             <a class="dropdown-item text-light" href="readyToEatShop.html">Ready To Eat</a>
             <a class="dropdown-item text-light" href="#">Ingrudients & Receipts</a>
             <a class="dropdown-item text-light" href="#">Special Events</a>
@@ -68,27 +71,29 @@
             <!-- Modal Header -->
             <div class="modal-header">
               <h4 class="modal-title">Send us and we'll be more than happy to assist!</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <!-- Cancel -->
+              <input type="button" value="X" class="btn btn-danger float-right" data-dismiss="modal">
             </div>
+
             <!-- Modal body including the form group (Name+ e-mail + Message)-->
             <div class="modal-body">
-              <form action="/action_page.php">
+              <form action="/action_page.php" name="contactForm" onsubmit="return validateForm()" method="post">
                 <!-- Name -->
                 <div class="form-group">
                   <label for="usr">Name:</label>
-                  <input type="text" class="form-control" id="usr"  placeholder="Enter Your Name">
+                  <input type="text" class="form-control" id="usr" name="usrName" placeholder="Enter Your Name">
                 </div>
 
                 <!-- e-mail -->
                 <div class="form-group">
                   <label for="email">Email:</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter Your email" name="email">
+                  <input type="email" class="form-control" id="email" placeholder="Enter Your email" name="cEmail">
                 </div>
 
                 <!-- Message text area -->
                 <div class="form-group">
                   <label for="comment">Comment:</label>
-                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                  <textarea class="form-control" rows="5" id="comment" name="cMessage"></textarea>
                 </div>
 
                 <!-- Callback Check Box -->
@@ -97,16 +102,21 @@
                     <input class="form-check-input" type="checkbox" name="remember"> Call me if possible
                   </label>
                 </div>
-              </form>
+
+                <!-- Submitt -->
+                <input type="submit" value="Send" class="btn btn-primary float-right">
+
             </div>
             <!-- Modal footer -->
+
             <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-              <button type="submit" class="btn btn-primary" data-dismiss="modal">Send</button>
+              <p style="margin: 0px 10px 0px 0px;">For live communication you may contact us via Whatsapp</p>
+              <a href="#"><img src="img/icons/whatsapp.png" alt="Whatsapp"></a>
             </div>
-          </div>
-        </div>
-      </div>
+          </form>
+        </div> <!-- MOdal content @ END -->
+      </div> <!-- MOdal dialog @ END -->
+    </div> <!-- MOdal div @ END -->
 
     <!-- Search Bar on the navigation bar-->
       <div style="margin-left: 15%;margin-right: 1%;">
@@ -133,17 +143,20 @@
 
         <!-- Row 2 -->
         <div class="row">
-          <div class="col-sm-2">
-            <img src="img/cake5jpg" alt="">
+          <div class="col-sm-2 bg-darker" style="padding:30px;margin:10px; border-radius:15px;">
+            <img src="img/cake5.jpg" alt="" style="margin: auto; display:block;border-radius:15px;">
             <h5>Birthday Parties</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
           </div>
-          <div class="col-sm-2">
-            <img src="img/cake5jpg" alt="">
+          <div class="col-sm-2" style="text-align:center;">
+            <img class="" src="img/cake1.jpg" alt="" style="border:2px solid #151515; border-radius:20px;">
             <h5>Engagement Parties</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
           </div>
           <div class="col-sm-2">
-            <img src="img/cake5jpg" alt="">
+            <img src="img/cake5.jpg" alt="">
             <h5>Custom Package</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
           </div>
         </div>
       </div>

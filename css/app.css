@@ -64,3 +64,11 @@ table {
 .abtTxt {
 	color:#cacaca;
 }
+
+#navBarDdown {
+  background-color: #151515;
+}
+
+#navBarDdown a:hover {
+  background-color: black;
+}

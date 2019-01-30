@@ -49,60 +49,67 @@
     <!-- Shop  -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" >Shop</a>
-          <div class="dropdown-menu gh-darker navbar-dark">
+          <div class="dropdown-menu" id="navBarDdown">
             <a class="dropdown-item text-light" href="readyToEatShop.html">Ready To Eat</a>
             <a class="dropdown-item text-light" href="#">Ingrudients & Receipts</a>
             <a class="dropdown-item text-light" href="specialEvents.html">Special Events</a>
           </div>
         </li>
       </ul>
-    <!-- Contact Modal -->
-      <div class="modal" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
+      <!-- Contact Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
 
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Send us and we'll be more than happy to assist!</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <!-- Modal body including the form group (Name+ e-mail + Message)-->
-            <div class="modal-body">
-              <form action="/action_page.php">
-                <!-- Name -->
-                <div class="form-group">
-                  <label for="usr">Name:</label>
-                  <input type="text" class="form-control" id="usr"  placeholder="Enter Your Name">
-                </div>
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Send us and we'll be more than happy to assist!</h4>
+                <!-- Cancel -->
+                <input type="button" value="X" class="btn btn-danger float-right" data-dismiss="modal">
+              </div>
 
-                <!-- e-mail -->
-                <div class="form-group">
-                  <label for="email">Email:</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter Your email" name="email">
-                </div>
+              <!-- Modal body including the form group (Name+ e-mail + Message)-->
+              <div class="modal-body">
+                <form action="/action_page.php" name="contactForm" onsubmit="return validateForm()" method="post">
+                  <!-- Name -->
+                  <div class="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="usr" name="usrName" placeholder="Enter Your Name">
+                  </div>
 
-                <!-- Message text area -->
-                <div class="form-group">
-                  <label for="comment">Comment:</label>
-                  <textarea class="form-control" rows="5" id="comment"></textarea>
-                </div>
+                  <!-- e-mail -->
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Your email" name="cEmail">
+                  </div>
 
-                <!-- Callback Check Box -->
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" name="remember"> Call me if possible
-                  </label>
-                </div>
-              </form>
-            </div>
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-              <button type="submit" class="btn btn-primary" data-dismiss="modal">Send</button>
-            </div>
-          </div>
-        </div>
-      </div>
+                  <!-- Message text area -->
+                  <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea class="form-control" rows="5" id="comment" name="cMessage"></textarea>
+                  </div>
+
+                  <!-- Callback Check Box -->
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="remember"> Call me if possible
+                    </label>
+                  </div>
+
+                  <!-- Submitt -->
+                  <input type="submit" value="Send" class="btn btn-primary float-right">
+
+              </div>
+              <!-- Modal footer -->
+
+              <div class="modal-footer">
+                <p style="margin: 0px 10px 0px 0px;">For live communication you may contact us via Whatsapp</p>
+                <a href="#"><img src="img/icons/whatsapp.png" alt="Whatsapp"></a>
+              </div>
+            </form>
+          </div> <!-- MOdal content @ END -->
+        </div> <!-- MOdal dialog @ END -->
+      </div> <!-- MOdal div @ END -->
 
     <!-- Search Bar on the navigation bar-->
       <div style="margin-left: 15%;margin-right: 1%;">
